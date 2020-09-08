@@ -17,11 +17,11 @@ def start():
 
     post_history = []
 
-    reddit = praw.Reddit(client_id='p4dkZ_eyaIA50A', 
-                        client_secret='G4swcucCUj1GajycgMCFQU_UXB8', 
-                        user_agent='bpt_bot', 
-                        username='pv_code', 
-                        password='5463890Qew-')
+    reddit = praw.Reddit(client_id='REDDIT-BOT-ID', 
+                        client_secret='REDDIT-BOT-SECRET', 
+                        user_agent='INSTAGRAM-BOT-NAME', 
+                        username='REDDIT-USER-ACCOUNT', 
+                        password='REDDIT-USER-PASSWORD')
 
     subreddit = list(reddit.subreddit('blackpeopletwitter').hot(limit=12))
 
@@ -30,10 +30,11 @@ def start():
 
         current_hot.append((submissions.url, submissions.title, submissions.shortlink))
 
+
     bot = Bot()
 
-    bot.login(username = "blackpeopletwitter_bot",  
-    password = "5463890Qew-")
+    bot.login(username = "INSTAGRAM-BOT-NAME",  
+    password = "INSTAGRAM-BOT-PASSWORD")
 
 
 
